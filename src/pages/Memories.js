@@ -20,7 +20,7 @@ function Memories() {
   return (
     <Container>
         <Head>
-            <Title>Dorethy's SomeCrust</Title>
+            <Title>Memories</Title>
         </Head>
     </Container>
   )

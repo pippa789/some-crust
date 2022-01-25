@@ -16,11 +16,11 @@ color: white;
 font-size: 60px;
 `;
 
-function App() {
+function News() {
   return (
     <Container>
         <Head>
-            <Title>Dorethy's SomeCrust</Title>
+            <Title>Dorethy's SomeCrust news</Title>
         </Head>
     </Container>
   )

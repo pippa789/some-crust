@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './Nav'
+import Memories from './Memories'
+import News from './News';
 
 const Container = styled.div`
 width: 100%;
@@ -19,9 +23,19 @@ font-size: 60px;
 function Home() {
   return (
     <Container>
+      <Router>
+      <Nav />
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/Memories' element={<Memories/>} />
+        <Route exact path='/News' element={<News/>} />
+      </Routes>
+      </Router>
+      
         <Head>
             <Title>Dorethy's SomeCrust</Title>
         </Head>
+       
     </Container>
   )
 }
