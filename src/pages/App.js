@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './Nav'
 import Memories from './Memories'
 import News from './News';
+import SignIn from '../components/login';
 
 const Container = styled.div`
 width: 100%;
@@ -25,6 +26,7 @@ function App() {
     <Container>
       <Router>
       <Nav />
+      <SignIn />
       <Routes>
         {/* <Route exact path='/' element={<App/>}/> */}
         <Route exact path='/Memories' element={<Memories/>} />
