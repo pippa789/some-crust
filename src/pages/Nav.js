@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
-import Home from './Home'
+// import styled from 'styled-components'
+// import App from './App'
 import { Link } from 'react-router-dom'
 
 function Nav() {
@@ -11,7 +11,7 @@ function Nav() {
      <nav>
        <h3> Dorethy's SomeCrust </h3>
        <ul>
-         <Link style={navStyle} to='/Home'>
+         <Link style={navStyle} to='/App'>
          <li>Home</li>
          </Link>
          <Link style={navStyle} to='/News'>

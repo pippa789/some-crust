@@ -20,13 +20,13 @@ color: white;
 font-size: 60px;
 `;
 
-function Home() {
+function App() {
   return (
     <Container>
       <Router>
       <Nav />
       <Routes>
-        <Route exact path='/' element={<Home/>}/>
+        {/* <Route exact path='/' element={<App/>}/> */}
         <Route exact path='/Memories' element={<Memories/>} />
         <Route exact path='/News' element={<News/>} />
       </Routes>
@@ -40,4 +40,4 @@ function Home() {
   )
 }
     
-export default Home
+export default App
